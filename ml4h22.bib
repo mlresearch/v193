@@ -1,0 +1,236 @@
+@Proceedings{ML4H-2022,
+    booktitle = {Proceedings of the 2nd Machine Learning for Health symposium},
+    name = {Machine Learning for Health},
+    shortname = {ML4H},
+    editor = {Parziale, Antonio and Agrawal, Monica and Joshi, Shalmali and Chen, Irene Y. and Tang, Shengpu and Oala, Luis and Subbaswamy, Adarsh},
+    volume = {193},
+    year = {2022},
+    start = {2022-11-28},
+    end = {2022-11-28},
+    published = {2022-11-22},
+    conference_url = {https://ml4health.github.io/2022/},
+    address = {New Orleans, Lousiana, USA & Virtual}
+}
+
+@InProceedings{parziale22,
+    title = {Machine Learning for Health (ML4H) 2022},
+    author = {Parziale, Antonio and Agrawal, Monica and Tang, Shengpu and Severson, Kristen and Oala, Luis and Subbaswamy, Adarsh and Kumar, Sayantan and Schoerverth, Elora and Hegselmann, Stefan and Zhou, Helen and Zamzmi, Ghada and Mugambi, Purity and Sizikova, Elena and Tadesse, Girmaw Abebe and Zhou, Yuyin and Killian, Taylor and Zhang, Haoran and Kamran, Fahad and Hobby, Andrea and Huang, Mars and Alaa, Ahmed and Singh, Harvineet and Chen, Irene Y. and Joshi, Shalmali},
+    pages = {1-11},
+}
+
+@InProceedings{jeanselme22,
+    title = {Imputation Strategies Under Clinical Presence: Impact on Algorithmic Fairness},
+    software = {https://github.com/Jeanselme/ClinicalPresenceFairness},
+    author = {Jeanselme, Vincent and De-Arteaga, Maria and Zhang, Zhe and Barrett, Jessica and Tom, Brian},
+    pages = {12-34},
+    abstract = {Biases have marked medical history, leading to unequal care affecting marginalised groups. The patterns of missingness in observational data often reflect these group discrepancies, but the algorithmic fairness implications of group-specific missingness are not well understood. Despite its potential impact, imputation is too often an overlooked preprocessing step. When explicitly considered, attention is placed on overall performance, ignoring how this preprocessing can reinforce group-specific inequities. Our work questions this choice by studying how imputation affects downstream algorithmic fairness. First, we provide a structured view of the relationship between clinical presence mechanisms and group-specific missingness patterns. Then, through simulations and real-world experiments, we demonstrate that the imputation choice influences marginalised group performance and that no imputation strategy consistently reduces disparities. Importantly, our results show that current practices may endanger health equity as similarly performing imputation strategies at the population level can affect marginalised groups differently. Finally, we propose recommendations for mitigating inequities that may stem from a neglected step of the machine learning pipeline.}
+}
+
+@InProceedings{kulkarni22,
+    title = {Predicting Treatment Adherence of Tuberculosis Patients at Scale},
+    author = {Kulkarni, Mihir and Golechha, Satvik and Raj, Rishi and Sreedharan, Jithin K. and Bhardwaj, Ankit and Rathod, Santanu and Vadera, Bhavin and Kurada, Jayakrishna and Mattoo, Sanjay and Joshi, Rajendra and Rade, Kirankumar and Raval, Alpan},
+    pages = {35-61},
+    abstract = {Tuberculosis (TB), an infectious bacterial disease, is a significant cause of death, especially in low-income countries, with an estimated ten million new cases reported globally in 2020. While TB is treatable, non-adherence to the medication regimen is a significant cause of morbidity and mortality. Thus, proactively identifying patients at risk of dropping off their medication regimen enables corrective measures to mitigate adverse outcomes. Using a proxy measure of extreme non-adherence and a dataset of nearly $700,000$ patients from four states in India, we formulate and solve the machine learning (ML) problem of early prediction of non-adherence based on a custom rank-based metric. We train ML models and evaluate against baselines, achieving a $\sim 100\%$ lift over rule-based baselines and $\sim 214\%$ over a random classifier, taking into account country-wide large-scale future deployment. We deal with various issues in the process, including data quality, high-cardinality categorical data, low target prevalence, distribution shift, variation across cohorts, algorithmic fairness, and the need for robustness and explainability. Our findings indicate that risk stratification of non-adherent patients is a viable, deployable-at-scale ML solution. As the official AI partner of India's Central TB Division, we are working on multiple city and state-level pilots with the goal of pan-India deployment.}
+}
+
+@InProceedings{hu22,
+    title = {Distributionally Robust Survival Analysis: A Novel Fairness Loss Without Demographics},
+    software = {https://github.com/discovershu/DRO_COX},
+    author = {Hu, Shu and Chen, George H.},
+    pages = {62-87},
+    abstract = {We propose a general approach for training survival analysis models that minimizes a worst-case error across <em>all</em> subpopulations that are large enough (occurring with at least a user-specified minimum probability). This approach uses a training loss function that does not know any demographic information to treat as sensitive. Despite this, we demonstrate that our proposed approach often scores better on recently established fairness metrics (without a significant drop in prediction accuracy) compared to various baselines, including ones which directly use sensitive demographic information in their training loss. Our code is available at: https://github.com/discovershu/DRO_COX}
+}
+
+@InProceedings{gadd22,
+    title = {mmVAE: multimorbidity clustering using Relaxed Bernoulli $\beta$-Variational Autoencoders},
+    software = {https://github.com/cwlgadd/mmVAE},
+    author = {Gadd, Charles and Nirantharakumar, Krishnarajah and Yau, Christopher},
+    pages = {88-102},
+    abstract = {The prevalence of chronic disease multimorbidity is a significant and increasing challenge for health systems. In many cases, the occurrence of one chronic disease leads to the development of one or more other chronic conditions. This exerts a significant challenge in improving patient outcomes and is a growing challenge globally as average population age increases. Using electronic health record information to identify patterns of co-occurring conditions is seen as an unbiased means of understanding multimorbidity but most studies have adopted off-the-shelf algorithmic techniques that are not tailored for the application. We present a novel bespoke approach for multimorbidity clustering based on a highly customised version of a $\beta$-variational autoencoder. We incorporate the use of minimum entropy clustering to identify sparse, low-dimensional factored representations that link at a feature-level to the observed patient-level multimorbidity profiles. We demonstrate how the approach can be used to explore complex structure in a population-scale health data sets by examining data from a UK population of nearly 300,000 women in pregnancy suffering from multimorbidity.}
+}
+
+@InProceedings{kim22,
+    title = {Feature Allocation Approach for Multimorbidity Trajectory Modelling},
+    software = {https://github.com/thysics/WF-MTM},
+    author = {Kim, Woojung and Jenkins, Paul A. and Yau, Christopher},
+    pages = {103-119},
+    abstract = {A multimorbidity trajectory charts the time-dependent acquisition of disease conditions in an individual. This is important for understanding and managing patients who have a complex array of multiple chronic conditions, particularly later in life. We construct a novel probabilistic generative model for multimorbidity acquisition within a Bayesian framework of latent feature allocation, which allows an individual's morbidity profile to be driven by multiple latent factors and allows the modelling of age-dependent multimorbidity trajectories. We demonstrate the utility of our model in applications to both simulated data and disease event data from patient electronic health records. In each setting, we show our model can reconstruct clinically meaningful latent multimorbidity patterns and their age-dependent prevalence trajectories.}
+}
+
+@InProceedings{mao22,
+    title = {Towards Cross-Modal Causal Structure and Representation Learning},
+    author = {Mao, Haiyi and Liu, Hongfu and Dou, Jason Xiaotian and Benos, Panayiotis V.},
+    pages = {120-140},
+    abstract = {Does the SARS-CoV-2 virus cause patients' chest X-Rays ground-glass opacities? Does an IDH-mutation cause differences in patients' MRI images? Conventional causal discovery algorithms, although well developed to uncover the cause-effect relationships on structured data, cannot elucidate causal relations between unstructured images and structured scalar variables due to the complexity of the former. In this paper, we consider causal discovery between images and structured (scalar) variables. Specifically, we derive low dimensional image representations to analyze with structured variables. We propose a two-module amortized variational algorithm named <b>C</b>ross-<b>M</b>odal Variational <b>C</b>ausal representation and structure <b>L</b>earning (<em>CMCL</em>). <em>CMCL</em> jointly learns identifiable representations given a set of independent structured variables and causal relations via formulating latent representations and structured variables into a direct acyclic graph. Moreover, we further enforce counterfactual invariance/variance onto representations. We demonstrate that <em>CMCL</em> outperforms other related methods on synthetic datasets and validate causal relations on semi-synthetic datasets by visualization.}
+}
+
+@InProceedings{argaw22,
+    title = {Identifying Heterogeneous Treatment Effects in Multiple Outcomes using Joint Confidence Intervals},
+    software = {https://github.com/pargaw/MOP-JCI},
+    author = {Argaw, Peniel N. and Healey, Elizabeth and Kohane, Isaac S.},
+    pages = {141-170},
+    abstract = {Heterogeneous treatment effects (HTEs) are commonly identified during randomized controlled trials (RCTs). Identifying subgroups of patients with similar treatment effects is of high interest in clinical research to advance precision medicine. Often, multiple clinical outcomes are measured during an RCT, each having a potentially heterogeneous effect. Recently there has been high interest in identifying subgroups from HTEs, however, there has been less focus on developing tools in settings where there are multiple outcomes. In this work, we propose a framework for partitioning the covariate space to identify subgroups across multiple outcomes based on the joint CIs. We test our algorithm on synthetic and semi-synthetic data where there are two outcomes, and demonstrate that our algorithm is able to capture the HTE in both outcomes simultaneously.}
+}
+
+@InProceedings{cheng22,
+    title = {Meta-analysis of individualized treatment rules via sign-coherency},
+    software = {https://github.com/jay-jojo-cheng/metacoop},
+    author = {Cheng, Jay Jojo and Huling, Jared D. and Chen, Guanhua},
+    pages = {171-198},
+    abstract = {Medical treatments tailored to a patient’s baseline characteristics hold the potential of improving patient outcomes while reducing negative side effects. Learning individualized treatment rules (ITRs) often requires aggregation of multiple datasets(sites); however, current ITR methodology does not take between-site heterogeneity into account, which can hurt model generalizability when deploying back to each site. To address this problem, we develop a method for individual-level meta-analysis of ITRs, which jointly learns site-specific ITRs while borrowing information about feature sign-coherency via a scientifically-motivated directionality principle. We also develop an adaptive procedure for model tuning, using information criteria tailored to the ITR learning problem. We study the proposed methods through numerical experiments to understand their performance under different levels of between-site heterogeneity and apply the methodology to estimate ITRs in a large multi-center database of electronic health records. This work extends several popular methodologies for estimating ITRs (A-learning, weighted learning) to the multiple-sites setting.}
+}
+
+@InProceedings{bojic22,
+    title = {SleepQA: A Health Coaching Dataset on Sleep for Extractive Question Answering},
+    software = {https://github.com/IvaBojic/SleepQA},
+    author = {Bojic, Iva and Ong, Qi Chwen and Thakkar, Megh and Kamran, Esha and Shua, Irving Yu Le and Pang, Jaime Rei Ern and Chen, Jessica and Nayak, Vaaruni and Joty, Shafiq and Car, Josip},
+    pages = {199-217},
+    abstract = {Question Answering (QA) systems can support health coaches in facilitating clients' lifestyle behavior changes (e.g., in adopting healthy sleep habits). In this paper, we design a domain-specific QA pipeline for sleep coaching. To this end, we release SleepQA, a dataset created from 7,005 passages comprising 4,250 training examples with single annotations and 750 examples with 5-way annotations. We fine-tuned different domain-specific BERT models on our dataset and perform extensive automatic and human evaluation of the resulting end-to-end QA pipeline. Comparisons of our pipeline with baseline show improvements in domain-specific natural language processing on real-world questions. We hope that this dataset will lead to wider research interest in this important health domain.}
+}
+
+@InProceedings{stremmel22,
+    title = {Extend and Explain: Interpreting Very Long Language Models},
+    software = {https://github.com/Optum/long-medical-document-lms},
+    author = {Stremmel, Joel and Hill, Brian L. and Hertzberg, Jeffrey and Murillo, Jaime and Allotey, Llewelyn and Halperin, Eran},
+    pages = {218-258},
+    abstract = {While Transformer language models (LMs) are state-of-the-art for information extraction, long text introduces computational challenges requiring suboptimal preprocessing steps or alternative model architectures. Sparse attention LMs can represent longer sequences, overcoming performance hurdles. However, it remains unclear how to explain predictions from these models, as not all tokens attend to each other in the self-attention layers, and long sequences pose computational challenges for explainability algorithms when runtime depends on document length. These challenges are severe in the medical context where documents can be very long, and machine learning (ML) models must be auditable and trustworthy. We introduce a novel Masked Sampling Procedure (MSP) to identify the text blocks that contribute to a prediction, apply MSP in the context of predicting diagnoses from medical text, and validate our approach with a blind review by two clinicians. Our method identifies $\approx 1.7\times$ more clinically informative text blocks than the previous state-of-the-art, runs up to $100\times$ faster, and is tractable for generating important phrase pairs. MSP is particularly well-suited to long LMs but can be applied to any text classifier. We provide a general implementation here. https://github.com/Optum/long-medical-document-lms}
+}
+
+@InProceedings{xu22,
+    title = {Counterfactual and Factual Reasoning over Hypergraphs for Interpretable Clinical Predictions on EHR},
+    software = {https://github.com/ritaranx/CACHE},
+    author = {Xu, Ran and Yu, Yue and Zhang, Chao and Ali, Mohammed K and Ho, Joyce C and Yang, Carl},
+    pages = {259-278},
+    abstract = {Electronic Health Record modeling is crucial for digital medicine. However, existing models ignore higher-order interactions among medical codes and their causal relations towards downstream clinical predictions. To address such limitations, we propose a novel framework CACHE, to provide <em>effective</em> and <em>insightful</em> clinical predictions based on hypergraph representation learning and counterfactual and factual reasoning techniques. Experiments on two real EHR datasets show the superior performance of CACHE. Case studies with a domain expert illustrate a preferred capability of CACHE in generating clinically meaningful interpretations towards the correct predictions.}
+}
+
+@InProceedings{unyi22,
+    title = {Neurodevelopmental Phenotype Prediction: A State-of-the-Art Deep Learning Model},
+    software = {https://github.com/daniel-unyi-42/Neurodevelopmental-Phenotype-Prediction},
+    author = {Unyi, D{\'a}niel and Gyires-T{\'o}th, B{\'a}lint},
+    pages = {279-289},
+    abstract = {A major challenge in medical image analysis is the automated detection of biomarkers from neuroimaging data. Traditional approaches, often based on image registration, are limited in capturing the high variability of cortical organisation across individuals. Deep learning methods have been shown to be successful in overcoming this difficulty, and some of them have even outperformed medical professionals on certain datasets. In this paper, we apply a deep neural network to analyse the cortical surface data of neonates, derived from the publicly available Developing Human Connectome Project (dHCP). Our goal is to identify neurodevelopmental biomarkers and to predict gestational age at birth based on these biomarkers. Using scans of preterm neonates acquired around the term-equivalent age, we were able to investigate the impact of preterm birth on cortical growth and maturation during late gestation. Besides reaching state-of-the-art prediction accuracy, the proposed model has much fewer parameters than the baselines, and its error stays low on both unregistered and registered cortical surfaces.}
+}
+
+@InProceedings{rosnati22,
+    title = {Analysing the effectiveness of a generative model for semi-supervised medical image segmentation},
+    author = {Rosnati, Margherita and Ribeiro, Fabio De Sousa and Monteiro, Miguel and de Castro, Daniel Coelho and Glocker, Ben},
+    pages = {290-310},
+   abstract = {Image segmentation is important in medical imaging, providing valuable, quantitative information for clinical decision-making in diagnosis, therapy, and intervention. The state-of-the-art in automated segmentation remains supervised learning, employing discriminative models such as U-Net. However, training these models requires access to large amounts of manually labelled data which is often difficult to obtain in real medical applications. In such settings, semi-supervised learning (SSL) attempts to leverage the abundance of unlabelled data to obtain more robust and reliable models. Recently, generative models have been proposed for semantic segmentation, as they make an attractive choice for SSL. Their ability to capture the joint distribution over input images and output label maps provides a natural way to incorporate information from unlabelled images. This paper analyses whether deep generative models such as the SemanticGAN are truly viable alternatives to tackle challenging medical image segmentation problems. To that end, we thoroughly evaluate the segmentation performance, robustness, and potential subgroup disparities of discriminative and generative segmentation methods when applied to large-scale, publicly available chest X-ray datasets.}
+}
+
+@InProceedings{gupta22,
+    title={An Extensive Data Processing Pipeline for MIMIC-IV},
+    software = {https://github.com/healthylaife/MIMIC-IV-Data-Pipeline},
+    author = {Gupta, Mehak and Gallamoza, Brennan and Cutrona, Nicolas and Dhakal, Pranjal and Poulain, Raphael and Beheshti, Rahmatollah},
+    pages = {311-325},
+    abstract = {An increasing amount of research is being devoted to applying machine learning methods to electronic health record (EHR) data for various clinical purposes. This growing area of research has exposed the challenges of the accessibility of EHRs. MIMIC is a popular, public, and free EHR dataset in a raw format that has been used in numerous studies. The absence of standardized preprocessing steps can be, however, a significant barrier to the wider adoption of this rare resource. Additionally, this absence can reduce the reproducibility of the developed tools and limit the ability to compare the results among similar studies. In this work, we provide a greatly customizable pipeline to extract, clean, and preprocess the data available in the fourth version of the MIMIC dataset (MIMIC-IV). The pipeline also presents an end-to-end wizard-like package supporting predictive model creations and evaluations. The pipeline covers a range of clinical prediction tasks which can be broadly classified into four categories - readmission, length of stay, mortality, and phenotype prediction. The tool is publicly available at https://github.com/healthylaife/MIMIC-IV-Data-Pipeline.}
+}
+
+@InProceedings{fayyaz22,
+    title = {Predicting attrition patterns from pediatric weight management programs},
+    software = {https://github.com/healthylaife/wm_attrition},
+    author = {Fayyaz, Hamed and Phan, Thao-Ly T. and Bunnell, H. Timothy and Beheshti, Rahmatollah},
+    pages = {326-342},
+    abstract = {Obesity is a major public health concern. Multidisciplinary pediatric weight management programs are considered standard treatment for children with obesity who are not able to be successfully managed in the primary care setting. Despite their great potential, high dropout rates (referred to as attrition) are a major hurdle in delivering successful interventions. Predicting attrition patterns can help providers reduce the alarmingly high rates of attrition (up to 80\%) by engaging in earlier and more personalized interventions. Previous work has mainly focused on finding static predictors of attrition on smaller datasets and has achieved limited success in effective prediction. In this study, we have collected  a five-year comprehensive dataset of 4,550 children from diverse backgrounds receiving treatment at four pediatric weight management programs in the US. We then developed a  machine learning pipeline to predict (a) the likelihood of attrition, and (b) the change in body-mass index (BMI) percentile of children, at different time points after joining the weight management program. Our pipeline is greatly customized for this problem using advanced machine learning techniques to process longitudinal data, smaller-size data, and interrelated prediction tasks. The proposed method showed strong prediction performance as measured by  AUROC scores  (average AUROC of 0.77 for predicting attrition, and 0.78 for predicting weight outcomes).}
+}
+
+@InProceedings{tu22,
+    title = {Automated LOINC Standardization Using Pre-trained Large Language Models},
+    author = {Tu, Tao and Loreaux, Eric and Chesley, Emma and Lelkes, Adam D. and Gamble, Paul and Bellaiche, Mathias and Seneviratne, Martin and Chen, Ming-Jun},
+    pages = {343-355},
+    abstract = {Harmonization of local source concepts to standard clinical terminologies is a prerequisite for multi-center data aggregation and sharing. Challenges in automating the mapping process stem from the idiosyncratic source encoding schemes adopted by different health systems and the lack of large publicly available training data. In this study, we aim to develop a scalable and generalizable machine learning tool to facilitate standardizing laboratory observations to the Logical Observation Identifiers Names and Codes (LOINC). Specifically, we leverage the contextual embedding from pre-trained T5 models and propose a two-stage fine-tuning strategy based on contrastive learning to enable learning in a few-shot setting without manual feature engineering. Our method utilizes unlabeled general LOINC ontology and data augmentation to achieve high accuracy on retrieving the most relevant LOINC targets when limited amount of labeled data are available. We further show that our model generalizes well to unseen targets. Taken together, our approach shows great potential to reduce manual effort in LOINC standardization and can be easily extended to mapping other terminologies.}
+}
+
+@InProceedings{he22,
+    title = {An Empirical Study on Activity Recognition in Long Surgical Videos},
+    author = {He, Zhuohong and Mottaghi, Ali and Sharghi, Aidean and Jamal, Muhammad Abdullah and Mohareri, Omid},
+    pages = {356-372},
+    abstract = {Activity recognition in surgical videos is a key research area for developing next-generation devices and workflow monitoring systems. Since surgeries are long processes with highly-variable lengths, deep learning models used for surgical videos often consist of a two-stage setup using a backbone and temporal sequence model. In this paper, we investigate many state-of-the-art backbones and temporal models to find architectures that yield the strongest performance for surgical activity recognition. We first benchmark the models performance on a large-scale activity recognition dataset containing over 800 surgery videos captured in multiple clinical operating rooms. We further evaluate the models on the two smaller public datasets, the Cholec80 and Cataract-101 datasets, containing only 80 and 101 videos respectively. We empirically found that Swin-Transformer+BiGRU temporal model yielded strong performance on both datasets. Finally, we investigate the adaptability of the model to new domains by fine-tuning models to a new hospital and experimenting with a recent unsupervised domain adaptation approach.}
+}
+
+@InProceedings{li22,
+    title = {OSLAT: Open Set Label Attention Transformer for Medical Entity Retrieval and Span Extraction},
+    software = {https://github.com/curai/curai-research/tree/main/OSLAT},
+    author = {Li, Raymond and Valmianski, Ilya and Deng, Li and Amatriain, Xavier and Kannan, Anitha},
+    pages = {373-390},
+    abstract = {Medical entity span extraction and linking are critical steps for many healthcare NLP tasks. Most existing entity extraction methods either have a fixed vocabulary of medical entities or require span annotations. In this paper, we propose a method for linking an open set of entities that does not require any span annotations. Our method, <b>Open Set Label Attention Transformer (OSLAT)</b>, uses the label-attention mechanism to learn candidate-entity contextualized text representations. We find that OSLAT can not only link entities but is also able to implicitly learn spans associated with entities. We evaluate OSLAT on two tasks: (1) span extraction trained without explicit span annotations, and (2) entity linking trained without span-level annotation. We test the generalizability of our method by training two separate models on two datasets with low entity overlap and comparing cross-dataset performance.}
+}
+
+@InProceedings{zhang22,
+    title = {Adapting Pre-trained Vision Transformers from 2D to 3D through Weight Inflation Improves Medical Image Segmentation},
+    software = {https://github.com/yuhui-zh15/TransSeg},
+    author = {Zhang, Yuhui and Huang, Shih-Cheng and Zhou, Zhengping and Lungren, Matthew P. and Yeung, Serena},
+    pages = {391-404},
+abstract = {Given the prevalence of 3D medical imaging technologies such as MRI and CT that are widely used in diagnosing and treating diverse diseases, 3D segmentation is one of the fundamental tasks of medical image analysis. Recently, Transformer-based models have started to achieve state-of-the-art performances across many vision tasks, through pre-training on large-scale natural image benchmark datasets. While works on medical image analysis have also begun to explore Transformer-based models, there is currently no optimal strategy to effectively leverage pre-trained Transformers, primarily due to the difference in dimensionality between 2D natural images and 3D medical images. Existing solutions either split 3D images into 2D slices and predict each slice independently, thereby losing crucial depth-wise information, or modify the Transformer architecture to support 3D inputs without leveraging pre-trained weights. In this work, we use a simple yet effective weight inflation strategy to adapt pre-trained Transformers from 2D to 3D, retaining the benefit of both transfer learning and depth information. We further investigate the effectiveness of transfer from different pre-training sources and objectives. Our approach achieves state-of-the-art performances across a broad range of 3D medical image datasets, and can become a standard strategy easily utilized by all work on Transformer-based models for 3D medical images, to maximize performance.}
+}
+
+@InProceedings{benkirane22,
+    title = {Hyper-AdaC: Adaptive clustering-based hypergraph representation of whole slide images for survival analysis},
+    software = {https://github.com/HakimBenkirane/Hyper-adaC},
+    author = {Benkirane, Hakim and Vakalopoulou, Maria and Christodoulidis, Stergios and Garberis, Ingrid-Judith and Michiels, Stefan and Courn{\`e}de, Paul-Henry},
+    pages = {405-418},
+    abstract = {The emergence of deep learning in the medical field has popularized the development of models to predict survival outcomes from histopathology images in precision oncology. 
+Graph-based formalism has opened interesting perspectives for generating informative representations, as they can be context-aware and model local and global topological structures in the tumor’s microenvironment. However, the critical issue in using graph representations lies in their generalizability. They can suffer from overfitting due to their large sizes or high discrepancies between nodes due to random sampling from WSI. In addition, standard graph formulations are limited to pairwise interactions, which can sometimes fail to represent the reality observed in histopathology and hinder the interpretability of those interactions. In this work, we present Hyper-AdaC, an adaptive clustering-based hypergraph representation to model high-order correlations among different regions of the WSIs while being compact enough to help graph neural networks generalize in the case of survival prediction. We evaluate our approach on $5$ different public available cancer datasets. Our method outperforms most state-of-the-art graph-based methods for survival prediction with WSIs, creating a more efficient and robust alternative to other graph representations. Moreover, due to our formulation, attention maps are depicted at different resolutions depending on the tissue characteristics of each WSI. The code is available at: https://github.com/HakimBenkirane/Hyper-adaC.}
+}
+
+@InProceedings{ciric22,
+    title = {Differentiable programming for functional connectomics},
+    software = {https://hypercoil.github.io/},
+    author = {Ciric, Rastko and Thomas, Armin W. and Esteban, Oscar and Poldrack, Russell A.},
+    pages = {419-455},
+    abstract = {Mapping the functional connectome has the potential to uncover key insights into brain organisation. However, existing workflows for functional connectomics are limited in their adaptability to new data, and principled workflow design is a challenging combinatorial problem. We introduce an analytic paradigm that implements common operations used in functional connectomics as fully differentiable processing blocks. Under this paradigm, workflow configurations exist as reparameterisations of a differentiable functional that interpolates them. The differentiable program that we ultimately envision occupies a niche midway between traditional pipelines and end-to-end neural networks, combining the glass-box tractability and domain knowledge of the former with the amenability to optimisation of the latter. In this preliminary work, we provide a proof of concept for differentiable connectomics, demonstrating the capacity of our processing blocks across three separate problem domains critically important to brain mapping. We also provide a software library to facilitate adoption. Our differentiable framework is competitive with state-of-the-art methods in functional brain parcellation, time series denoising, and covariance modelling. Taken together, our results demonstrate the promise of differentiable programming for functional connectomics.}
+}
+
+@InProceedings{ramesh22,
+    title = {Improving Radiology Report Generation Systems by Removing Hallucinated References to Non-existent Priors},
+    software = {https://github.com/rajpurkarlab/CXR-ReDonE},
+    author = {Ramesh, Vignav and Chi, Nathan A. and Rajpurkar, Pranav},
+    pages = {456-473},
+    abstract = {Current deep learning models trained to generate radiology reports from chest radiographs are capable of producing clinically accurate, clear, and actionable text that can advance patient care. However, such systems all succumb to the same problem: making hallucinated references to non-existent prior reports. Such hallucinations occur because these models are trained on datasets of real-world patient reports that inherently refer to priors. To this end, we propose two methods to remove references to priors in radiology reports: (1) a GPT-3-based few-shot approach to rewrite medical reports without references to priors; and (2) a BioBERT-based token classification approach to directly remove words referring to priors. We use the aforementioned approaches to modify MIMIC-CXR, a publicly available dataset of chest X-rays and their associated free-text radiology reports; we then retrain CXR-RePaiR, a radiology report generation system, on the adapted MIMIC-CXR dataset. We find that our re-trained model---which we call CXR-ReDonE---outperforms previous report generation methods on clinical metrics, achieving an average BERTScore of 0.2351 ($2.57\%$ absolute improvement). We expect our approach to be broadly valuable in enabling current radiology report generation systems to be more directly integrated into clinical pipelines. }
+}
+
+@InProceedings{wang22,
+    title = {Improving Sepsis Prediction Model Generalization With Optimal Transport},
+    author = {Wang, Jie and Moore, Ronald and Xie, Yao and Kamaleswaran, Rishikesan},
+    pages = {474-488},
+    abstract = {Sepsis is a deadly condition affecting many patients in the hospital. There have been many efforts to build models that predict the onset of sepsis, but these models tend to perform terribly when validated on external data from different hospitals due to distributional shifts in the data and insufficient samples from sepsis patients. To circumvent the curse from noisy and unbalanced samples, we develop a novel two-step approach for sepsis prediction: given feature-label points from the source domain and feature points from the target domain, to obtain a sepsis predictor that has satisfactory performance at the target domain. The proposed algorithm first learns how to transform sample points from the source domain to the target domain, and then applies the distributionally robust optimization (DRO) technique with the Sinkhorn distance and asymmetric cost function to reliably obtain a classifier with satisfactory out-of-sample performance. Connections between our proposed formulation and widely used classification models, i.e., DRO formulation with the Wasserstein distance and regularized logistic regression formulation, are also uncovered. Numerical experiments with synthetic and real datasets demonstrate the competitive performance of the proposed method.}
+}
+
+@InProceedings{yao22,
+    title = {A Path Towards Clinical Adaptation of Accelerated MRI},
+    software = {https://github.com/michael-s-yao/accMRI},
+    author = {Yao, Michael S. and Hansen, Michael S.},
+    pages = {489-511},
+    abstract = {Accelerated MRI reconstructs images of clinical anatomies from sparsely sampled signal data to reduce patient scan times. While recent works have leveraged deep learning to accomplish this task, such approaches have often only been explored in simulated environments where there is no signal corruption or resource limitations. In this work, we explore augmentations to neural network MRI image reconstructors to enhance their clinical relevancy. Namely, we propose a ConvNet model for detecting sources of image artifacts that achieves a classifier $\mathit{F}_{2}$ score of 79.1\%. We also demonstrate that training reconstructors on MR signal data with variable acceleration factors can improve their average performance during a clinical patient scan by up to 2\%. We offer a loss function to overcome catastrophic forgetting when models learn to reconstruct MR images of multiple anatomies and orientations. Finally, we propose a method for using simulated phantom data to pre-train reconstructors in situations with limited clinically acquired datasets and compute capabilities. Our results provide a potential path forward for clinical adaptation of accelerated MRI.}
+}
+
+@InProceedings{ho22,
+    title = {Machine and Deep Learning Methods for Predicting Immune Checkpoint Blockade Response},
+    author = {Ho, Danliang and Motani, Mehul},
+    pages = {512-529},
+    abstract = {Immune checkpoint blockade (ICB) therapy has improved treatment options in various cancer malignancies and holds promise for increasing the overall survival of treated patients. However, only a small proportion of patients benefit from ICB treatment. Furthermore, ICB therapy has been known to induce adverse autoimmunity reactions in certain patients. These two reasons motivate the clinical need to identify factors that predict a patient's response to ICB treatment. In our study, we developed several machine and deep learning-based models to predict response to ICB treatment, using a real-world tabular dataset across sixteen cancer types. We showed that our best model CB16, which is based on gradient boosting, outperforms all-known published results for this task, with sensitivity and specificity scores of 80.6% and 78.8% respectively. Our model also offers insights to clinical interpretability through the use of the SHAP explanation framework, which are consistent with known important predictors. Next, in order to see if deep learning can improve performance, we propose a methodology for the design of deep neural networks that addresses the lack of spatial and temporal structure in tabular data. Our approach is based on a combination of learning ordered representations and ensembling techniques. We show that, for the ICB prediction problem, current SOTA deep-learning architectures such as TabNet and TabTransformer do not perform well while our method achieves good performance. Our method achieves an F1 score 12.4 percentage points beyond that of TabTransformer, and sensitivity and specificity scores of 77.3% and 62.2% respectively. Through our work, we hope to improve the task of predicting ICB response, and contribute towards the creation of high-performance and interpretable AI models for real-world tabular data.}
+}
+
+@InProceedings{tassopoulou22,
+    title = {Deep Kernel Learning with Temporal Gaussian Processes for Clinical Variable Prediction in Alzheimer's Disease},
+    author = {Tassopoulou, Vasiliki and Yu, Fanyang and Davatzikos, Christos},
+    pages = {539-551},
+    abstract = {Longitudinal prediction of Alzheimer's disease progression is of high importance for early diagnosis and clinical trial design. We propose to predict the longitudinal changes of neuroimaging biomarkers and cognitive scores by leveraging the expressivity of Deep Kernel Learning with single-task Gaussian Processes. The temporal function that describes the progression of the biomarker is learned through a Gaussian Process. By learning these temporal functions we can predict any future value of a clinical variable. We apply our method for extrapolation of neuroimaging biomarkers, SPARE-AD index, and cognitive metric Adas-Cog13, both significant predictors for the pathological and cognitive changes of Alzheimer's Disease. The method has been validated in two cohorts, ADNI and BLSA, where the results show that the proposed method significantly outperforms baselines and state-of-the-art models in AD progression prediction both on providing point estimates and quantifying uncertainty.}
+}
+
+@InProceedings{lopezmartinez22,
+    title = {Instability in clinical risk stratiﬁcation models using deep learning},
+    author = {Lopez-Martinez, Daniel and Yakubovich, Alex and Seneviratne, Martin and Lelkes, Adam D. and Tyagi, Akshit and Kemp, Jonas and Steinberg, Ethan and Downing, N. Lance and Li, Ron C. and Morse, Keith E. and Shah, Nigam H. and Chen, Ming-Jun},
+    pages = {552-565},
+    abstract = {While it has been well known in the ML community that deep learning models suffer from instability, the consequences for healthcare deployments are under characterised. We study the stability of different model architectures trained on electronic health records, using a set of outpatient prediction tasks as a case study. We show that repeated training runs of the same deep learning model on the same training data can result in significantly different outcomes at a patient level even though global performance metrics remain stable. We propose two stability metrics for measuring the effect of randomness of model training, as well as mitigation strategies for improving model stability. }
+}
+
+@InProceedings{ezhov22,
+    title = {A for-loop is all you need. For solving the inverse problem in the case of personalized tumor growth modeling},
+    software = {https://github.com/IvanEz/for-loop-tumor},
+    author = {Ezhov, Ivan and Rosier, Marcel and Zimmer, Lucas and Kofler, Florian and Shit, Suprosanna and Paetzold, Johannes C. and Scibilia, Kevin and Steinbauer, Felix and Maechler, Leon and Franitza, Katharina and Amiranashvili, Tamaz and Menten, Martin J. and Metz, Marie and Conjeti, Sailesh and Wiestler, Benedikt and Menze, Bjoern},
+    pages = {566-577},
+abstract = {Solving the inverse problem is the key step in evaluating the capacity of a physical model to describe real phenomena. In medical image computing, it aligns with the classical theme of image-based model personalization. Traditionally, a solution to the problem is obtained by performing either sampling or variational inference based methods. Both approaches aim to identify a set of free physical model parameters that results in a simulation best matching an empirical observation. When applied to brain tumor modeling, one of the instances of image-based model personalization in medical image computing, the overarching drawback of the methods is the time complexity of finding such a set. In a clinical setting with limited time between imaging and diagnosis or even intervention, this time complexity may prove critical. 
+As the history of quantitative science is the history of compression (Schmidhuber and Fridman, 2018), we align in this paper with the historical tendency and propose a method compressing complex traditional strategies for solving an inverse problem into a simple database query task. We evaluated different ways of performing the database query task assessing the trade-off between accuracy and execution time. On the exemplary task of brain tumor growth modeling, we prove that the proposed method achieves one order speed-up compared to existing approaches for solving the inverse problem. The resulting compute time offers critical means for relying on more complex and, hence, realistic models, for integrating image preprocessing and inverse modeling even deeper, or for implementing the current model into a clinical workflow. The code is available at https://github.com/IvanEz/for-loop-tumor.}
+}
